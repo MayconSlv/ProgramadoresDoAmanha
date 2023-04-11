@@ -1,5 +1,5 @@
 #fade {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   left: 0;
@@ -94,9 +94,13 @@
   font-size: 1.4rem;
 }
 
-#modal__button {
+#register {
   background-color: tomato;
   margin-left: auto;
   padding: 0.5rem 2rem;
   border-radius: 12px;
+}
+
+.hide {
+  opacity: 0;
 }

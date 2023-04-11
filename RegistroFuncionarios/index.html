@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./styles/index.css" />
+    <script type="text/javascript" src="./js/script.js" defer></script>
     <title>Funcionarios</title>
   </head>
   <body>
     <header class="cabecalho">
       <div class="cabecalho__logo"></div>
-      <button>Registrar</button>
+      <button id="openModal">Registrar</button>
     </header>
 
-    <div id="fade"></div>
-    <div id="modal">
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
       <form>
         <div class="inputBox">
           <input
@@ -65,7 +66,7 @@
           >Confirme se todas as informações estão corretas</span
         >
 
-        <button type="button" id="modal__button">Registrar</button>
+        <button type="button" id="register">Registrar</button>
       </form>
     </div>
 
