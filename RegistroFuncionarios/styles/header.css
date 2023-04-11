@@ -1,0 +1,13 @@
+.cabecalho {
+  background-color: var(--gray-400);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho button {
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
