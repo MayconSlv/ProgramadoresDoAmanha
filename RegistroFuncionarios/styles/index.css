@@ -1,3 +1,6 @@
+@import url('./header.css');
+@import url('./modal.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +10,9 @@
 :root {
   font-size: 62.5%;
 
-  --gray-700: #121214;
-  --gray-600: #202024;
-  --gray-500: #29292e;
-  --gray-400: #323238;
+  --background: #f2fafd;
+  --primary: #2a364f;
+  --secondary: #f1f8ff;
   --gray-300: #7c7c8a;
   --gray-200: #c4c4cc;
   --gray-100: #e1e1e6;
@@ -21,7 +23,7 @@
 }
 
 body {
-  background: var(--gray-600);
+  background: var(--background);
   color: var(--gray-100);
   -webkit-font-smoothing: antialiased;
 }
