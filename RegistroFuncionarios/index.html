@@ -35,11 +35,11 @@
           <input
             type="text"
             placeholder="Escreva o cargo"
-            id="cargo"
+            id="role"
             autocomplete="off"
             class="input"
             required />
-          <label for="cargo" class="label">Cargo</label>
+          <label for="role" class="label">Cargo</label>
         </div>
 
         <div class="inputBox">
@@ -68,7 +68,11 @@
           >Confirme se todas as informações estão corretas</span
         >
 
-        <button type="button" id="register" class="register-button">
+        <button
+          type="button"
+          id="register"
+          class="register-button"
+          onclick="registrarFuncionario()">
           Registrar
         </button>
       </form>
@@ -85,26 +89,12 @@
           </tr>
         </thead>
 
-        <tbody class="lista__body">
+        <tbody class="lista__body" id="tbody">
           <tr>
-            <td>Maycon Silva</td>
-            <td>Desenvolvedor web</td>
-            <td>999.999</td>
-            <td>(00) 99999-9999</td>
-          </tr>
-
-          <tr>
-            <td>Maycon Silva</td>
-            <td>Desenvolvedor web</td>
-            <td>999.999</td>
-            <td>(00) 99999-9999</td>
-          </tr>
-
-          <tr>
-            <td>Maycon Silva</td>
-            <td>Desenvolvedor web</td>
-            <td>999.999</td>
-            <td>(00) 99999-9999</td>
+            <td>---- -----</td>
+            <td>---- -----</td>
+            <td>----- -----</td>
+            <td>xx xxxxx-xxxx</td>
           </tr>
         </tbody>
       </table>
