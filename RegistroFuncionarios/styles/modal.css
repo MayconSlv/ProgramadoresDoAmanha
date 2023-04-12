@@ -20,6 +20,25 @@
   color: black;
 }
 
+.fa-user {
+  color: var(--white);
+  padding: 2rem;
+  font-size: 4rem;
+  border-radius: 999px;
+  background: var(--gradient);
+  position: absolute;
+  top: -40px;
+  left: 160px;
+}
+
+#modal h2 {
+  font-size: 1.8rem;
+  padding: 4rem 0 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid red;
+  width: 75%;
+}
+
 #modal form {
   display: flex;
   flex-direction: column;
@@ -96,4 +115,5 @@
 
 .hide {
   opacity: 0;
+  pointer-events: none;
 }
