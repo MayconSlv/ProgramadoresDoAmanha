@@ -1,5 +1,6 @@
 @import url('./header.css');
 @import url('./modal.css');
+@import url('./home.css');
 
 * {
   margin: 0;
@@ -11,11 +12,11 @@
   font-size: 62.5%;
 
   --secondary: #f1f8ff;
-  --gradient: linear-gradient(#ff8889, #ffa773);
+  --gradient: linear-gradient(90deg, #ff8889, #ffa773);
   --background: #f2f2f2;
   --fade: #ebf4f2;
   --white: #fff;
-  --gray: #ebf4f2;
+  --gray: #f3f3f3;
   --primary: #ff945a;
 }
 

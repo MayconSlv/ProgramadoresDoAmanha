@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./styles/index.css" />
-    <script type="text/javascript" src="./js/script.js" defer></script>
+    <!-- <script type="text/javascript" src="./js/script.js" defer></script> -->
     <title>Funcionarios</title>
   </head>
   <body>
     <header class="cabecalho">
       <div class="cabecalho__logo"></div>
-      <button id="openModal">Registrar</button>
+      <button id="openModal" class="register-button">Registrar</button>
     </header>
 
     <div id="fade" class="hide"></div>
@@ -66,24 +66,45 @@
           >Confirme se todas as informações estão corretas</span
         >
 
-        <button type="button" id="register">Registrar</button>
+        <button type="button" id="register" class="register-button">
+          Registrar
+        </button>
       </form>
     </div>
 
-    <main class="lista">
-      <table>
-        <tr>
-          <th>Nome</th>
-          <th>Cargo</th>
-          <th>Salario</th>
-          <th>Telefone</th>
-        </tr>
-        <tr>
-          <td>Maycon Silva</td>
-          <td>Desenvolvedor web</td>
-          <td>999.999</td>
-          <td>(00) 99999-9999</td>
-        </tr>
+    <main class="lista container">
+      <table class="lista__table">
+        <thead class="lista__header">
+          <tr>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Salario</th>
+            <th>Telefone</th>
+          </tr>
+        </thead>
+
+        <tbody class="lista__body">
+          <tr>
+            <td>Maycon Silva</td>
+            <td>Desenvolvedor web</td>
+            <td>999.999</td>
+            <td>(00) 99999-9999</td>
+          </tr>
+
+          <tr>
+            <td>Maycon Silva</td>
+            <td>Desenvolvedor web</td>
+            <td>999.999</td>
+            <td>(00) 99999-9999</td>
+          </tr>
+
+          <tr>
+            <td>Maycon Silva</td>
+            <td>Desenvolvedor web</td>
+            <td>999.999</td>
+            <td>(00) 99999-9999</td>
+          </tr>
+        </tbody>
       </table>
     </main>
   </body>

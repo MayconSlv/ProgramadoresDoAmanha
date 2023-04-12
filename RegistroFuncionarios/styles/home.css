@@ -1,0 +1,26 @@
+.lista__table {
+  background-color: var(--white);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+
+  margin: 50px auto;
+  border-collapse: collapse;
+  width: 550px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.lista__header tr {
+  background: var(--gradient);
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+}
+
+.lista__table th,
+.lista__table td {
+  padding: 12px 15px;
+}
+
+.lista__body tr:nth-of-type(even) {
+  background-color: var(--gray);
+}
