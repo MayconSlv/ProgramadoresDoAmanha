@@ -94,13 +94,6 @@
   font-size: 1.4rem;
 }
 
-#register {
-  background-color: tomato;
-  margin-left: auto;
-  padding: 0.5rem 2rem;
-  border-radius: 12px;
-}
-
 .hide {
   opacity: 0;
 }

@@ -1,13 +1,16 @@
 .cabecalho {
-  background-color: var(--gray-400);
+  background: var(--white);
   padding: 2rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
-.cabecalho button {
-  padding: 0.5rem 2rem;
-  border-radius: 12px;
+.register-button {
+  padding: 0.7rem 2.5rem;
+  border-radius: 8px;
   cursor: pointer;
+  background: var(--gradient);
+  font-weight: 500;
+  color: var(--white);
 }
