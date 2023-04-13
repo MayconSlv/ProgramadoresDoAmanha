@@ -1,5 +1,3 @@
-// função aparecer e sumir o modal
-
 const openModal = document.querySelector('#openModal')
 const registerButton = document.querySelector('#register')
 const modal = document.querySelector('#modal')
@@ -66,11 +64,21 @@ registerButton.addEventListener('click', (event) => {
     alert('Numero invalido')
     return
   } else {
+    const formatedSalary = new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+    }).format(salario.value)
+
+    const formatedTel = (tel) => {
+      tel = `(${tel.substr(0, 2)}) ${tel.substr(2, 5)}-${tel.substr(7, 11)}`
+      return tel
+    }
+
     const funcionario = {
       nome: fullName.value,
       cargo: role.value,
-      salario: salario.value,
-      telefone: tel.value,
+      salario: formatedSalary,
+      telefone: formatedTel(tel.value),
     }
 
     funcionarios.push(funcionario)
