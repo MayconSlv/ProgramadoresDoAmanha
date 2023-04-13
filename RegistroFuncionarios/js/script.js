@@ -80,5 +80,8 @@ registerButton.addEventListener('click', (event) => {
     role.value = ''
     salario.value = ''
     tel.value = ''
+
+    modal.classList.add('hide')
+    fade.classList.add('hide')
   }
 })
