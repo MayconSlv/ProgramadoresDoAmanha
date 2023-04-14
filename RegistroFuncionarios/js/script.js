@@ -81,12 +81,15 @@ registerButton.addEventListener('click', (event) => {
     return
   } else if (role.value === '' || !nameRegex.test(role.value)) {
     setError(1, 'Evite utilizar caracteres especiais !@#$&')
+  } else if (salario.value === '') {
+    setError(2, 'Não deixe o campo vazio')
   } else if (tel.value === '' || !telRegex.test(tel.value)) {
     setError(3, 'Número inválido, verifique se está correto')
     return
   } else {
     removeError(0, 'Escreva seu nome')
     removeError(1, 'Escreva o cargo')
+    removeError(2, 'Escreva o salário')
     removeError(3, 'Escreva o telefone')
 
     const formatedSalary = new Intl.NumberFormat('pt-BR', {
