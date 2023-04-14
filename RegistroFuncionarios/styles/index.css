@@ -11,13 +11,13 @@
 :root {
   font-size: 62.5%;
 
-  --secondary: #f1f8ff;
-  --gradient: linear-gradient(90deg, #ff8889, #ffa773);
-  --background: #f2f2f2;
-  --fade: #ebf4f2;
-  --white: #fff;
-  --gray: #f3f3f3;
-  --primary: #ff945a;
+  --gray-700: #121214;
+  --gray-500: #29292e;
+  --gray-400: #323238;
+  --gray-100: #e1e1e6;
+
+  --purple-gradient: linear-gradient(125deg, #24072a, #791a5a);
+  --yellow-gradient: linear-gradient(140deg, #eddc11, 20%, #ebda4c);
 }
 
 body {
