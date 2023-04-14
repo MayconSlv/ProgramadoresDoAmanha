@@ -110,7 +110,11 @@
 
 .verify {
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: var(--error);
 }
 
 .hide {

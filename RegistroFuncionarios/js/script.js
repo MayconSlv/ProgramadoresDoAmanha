@@ -64,15 +64,31 @@ registerButton.addEventListener('click', (event) => {
   const telRegex =
     /^(1[1-9]|[4689][0-9]|2[12478]|3([1-5]|[7-8])|5([13-5])|7[193-7])9[0-9]{8}$/
 
+  const verifyMessage = document.querySelectorAll('.verify')
+
+  function setError(index, text) {
+    verifyMessage[index].classList.add('error')
+    verifyMessage[index].textContent = text
+  }
+
+  function removeError(index, text) {
+    verifyMessage[index].classList.remove('error')
+    verifyMessage[index].textContent = text
+  }
+
   if (fullName.value === '' || !nameRegex.test(fullName.value)) {
-    alert('Preencha o nome')
+    setError(0, 'Evite utilizar caracteres especiais !@#$&')
     return
   } else if (role.value === '' || !nameRegex.test(role.value)) {
-    alert('Nome invalido')
+    setError(1, 'Evite utilizar caracteres especiais !@#$&')
   } else if (tel.value === '' || !telRegex.test(tel.value)) {
-    alert('Numero invalido')
+    setError(3, 'Número inválido, verifique se está correto')
     return
   } else {
+    removeError(0, 'Escreva seu nome')
+    removeError(1, 'Escreva o cargo')
+    removeError(3, 'Escreva o telefone')
+
     const formatedSalary = new Intl.NumberFormat('pt-BR', {
       style: 'currency',
       currency: 'BRL',

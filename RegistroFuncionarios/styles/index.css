@@ -23,6 +23,8 @@
 
   --purple-gradient: linear-gradient(125deg, #24072a, #791a5a);
   --yellow-gradient: linear-gradient(140deg, #eddc11, 20%, #ebda4c);
+
+  --error: #e25858;
 }
 
 body {
