@@ -16,8 +16,28 @@ const toggleModal = () => {
 
 var funcionarios = []
 
+const tbody = document.querySelector('#tbody')
+
+window.onload = () => {
+  const storageFuncionarios = localStorage.getItem('funcionarios')
+
+  if (localStorage.funcionarios) {
+    funcionarios = JSON.parse(storageFuncionarios)
+  }
+
+  for (let i in funcionarios) {
+    const tr = document.createElement('tr')
+    tr.innerHTML = `
+      <td>${funcionarios[i].nome}</td>
+      <td>${funcionarios[i].cargo}</td>
+      <td>${funcionarios[i].salario}</td>
+      <td>${funcionarios[i].telefone}</td>
+    `
+    tbody.appendChild(tr)
+  }
+}
+
 function criarFuncionario(funcionario) {
-  const tbody = document.querySelector('#tbody')
   const tr = document.createElement('tr')
 
   tbody.appendChild(tr)
@@ -29,17 +49,6 @@ function criarFuncionario(funcionario) {
       <td>${funcionario[i].salario}</td>
       <td>${funcionario[i].telefone}</td>
     `
-  }
-}
-
-function nameValidation(event) {
-  const input = event.currentTarget
-  const nameTest = regex.test(input.value)
-
-  if (!nameTest) {
-    registerButton.setAttribute('disabled', 'disabled')
-  } else {
-    registerButton.removeAttribute('disabled')
   }
 }
 
@@ -83,6 +92,8 @@ registerButton.addEventListener('click', (event) => {
 
     funcionarios.push(funcionario)
     criarFuncionario(funcionarios)
+
+    localStorage.setItem('funcionarios', JSON.stringify(funcionarios))
 
     fullName.value = ''
     role.value = ''
