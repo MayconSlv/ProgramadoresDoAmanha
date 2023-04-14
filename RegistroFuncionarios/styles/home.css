@@ -1,19 +1,19 @@
 .lista__table {
-  background-color: var(--white);
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  background-color: var(--gray-400);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 
   margin: 50px auto;
   border-collapse: collapse;
-  width: 550px;
+  width: 850px;
   border-radius: 12px 12px 0 0;
   overflow: hidden;
 }
 
 .lista__header tr {
-  background: var(--gradient);
-  color: var(--white);
+  background: var(--yellow-gradient);
+  color: var(--gray-500);
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 .lista__table th,
@@ -21,6 +21,14 @@
   padding: 12px 15px;
 }
 
+.lista__table td:nth-child(1) {
+  width: 30%;
+}
+
+.lista__table td:nth-child(2) {
+  width: 30%;
+}
+
 .lista__body tr:nth-of-type(even) {
-  background-color: var(--gray);
+  background-color: var(--gray-300);
 }

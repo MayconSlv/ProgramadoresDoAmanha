@@ -12,16 +12,21 @@
   font-size: 62.5%;
 
   --gray-700: #121214;
+  --gray-600: #202024;
   --gray-500: #29292e;
   --gray-400: #323238;
+  --gray-300: #4c4c51;
   --gray-100: #e1e1e6;
+
+  --brand-yellow: #eddc11;
+  --brand-purple: #791a5a;
 
   --purple-gradient: linear-gradient(125deg, #24072a, #791a5a);
   --yellow-gradient: linear-gradient(140deg, #eddc11, 20%, #ebda4c);
 }
 
 body {
-  background: var(--background);
+  background: var(--gray-700);
   color: var(--gray-100);
   -webkit-font-smoothing: antialiased;
 }
