@@ -1,3 +1,16 @@
+.lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.overflow {
+  height: 400px;
+  overflow: auto;
+  width: 870px;
+}
+
 .lista__table {
   background-color: var(--gray-400);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
